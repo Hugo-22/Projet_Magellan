@@ -1,15 +1,10 @@
 <?php
-
 require_once('Connexion.php');
 require_once('database.php');
 require_once('Menu.php');
-
 // Nouvelle instance de Menu
 $ajoutMenu = new Menu();
-
 ?>
-
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -39,17 +34,17 @@ $ajoutMenu = new Menu();
 	<script src="js/selectbox.min.js"></script>
   </head>
 
-  <body style="background-color: #eddec3;">
+  <body>
 
   <section>
         <!--  NavBar   -->
         <div class="navbar bg-dark">
-            <a href="#header">Accueil</a>
-            <a href="#presentation">La Chef</a>
-            <a href="#menu">Menu</a>
-            <a href="#offres">Offres</a>
+            <a href="index.php">Accueil</a>
+            <a href="index.php#presentation">La Chef</a>
+            <a href="index.php#menu">Menu</a>
+            <a href="index.php#offres">Offres</a>
             <a href="#">Réservation</a>
-            <a href="#contact">Contact</a>
+            <a href="index.php#contact">Contact</a>
         </div>
 
         <div class="outer-menu">
@@ -61,41 +56,32 @@ $ajoutMenu = new Menu();
               <div>
                 <div>
                   <ul>
-                    <li><a class="menu-b-link" href="#header">ACCUEIL</a></li>
-                    <li><a class="menu-b-link" href="#presentation">LA CHEF</a></li>
-                    <li><a class="menu-b-link" href="#menu">MENU</a></li>
-                    <li><a class="menu-b-link" href="#offres">OFFRES</a></li>
+                    <li><a class="menu-b-link" href="index.php">ACCUEIL</a></li>
+                    <li><a class="menu-b-link" href="index.php#presentation">LA CHEF</a></li>
+                    <li><a class="menu-b-link" href="index.php#menu">MENU</a></li>
+                    <li><a class="menu-b-link" href="index.php#offres">OFFRES</a></li>
                     <li><a class="menu-b-link" href="#">RESERVATION</a></li>
-                    <li><a class="menu-b-link" href="#contact">CONTACT</a></li>
+                    <li><a class="menu-b-link" href="index.php#contact">CONTACT</a></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
     </section>
-    <div class="container mt-resa">
-
 
       <!-- Section: Block Content -->
-      <section class="dark-grey-text">
+      <section class="dark-grey-text container mt-resa">
 
-        <h3 class="text-center font-weight-bold mb-4 pb-2">Faites votre réservation de repas</h3>
-        <!-- <p class="text-center text-muted w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p> -->
+        <h3 class="text-center font-weight-bold mb-4 pb-2">Faites votre choix !</h3>
 
         <!-- Grid row -->
         <div class="row">
 
           <!-- Grid column -->
-          <div class="col-lg-5 mb-lg-0 mb-5 text-center">
-
-            <img src="img/cuisine.jpg" class="img-media" alt="">
-
-          </div>
-          <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-lg-7 d-flex">
-            <form action="" method="post">
+          <div class="col-lg-12 d-flex">
+            <form class='' action="traitement_resa.php" method="post">
 
 		<?php
 		  	$today = strftime("%Y-%m-%d", strtotime("now"));
@@ -111,7 +97,7 @@ $ajoutMenu = new Menu();
 			
 			echo "<div class='form-flex-1'>";
 			echo "<ul class='ks-cboxtags'> <li class=''>";
-			echo "<input class='form-control w-35' type='checkbox' name='azer[]' value='".$date."'>";
+			echo "<input class='form-control' type='checkbox' name='azer[]' value='".$date."'>";
 			echo "<label class='' for='azer[]'>".$date."</label>";
 			echo "</li></ul>";
 
@@ -152,7 +138,7 @@ $ajoutMenu = new Menu();
       </section>
       <!-- Section: Block Content -->
 
-    </div>
+  
   </body>
 
 </html>

@@ -23,7 +23,7 @@
     position: fixed;
     top: 17px;
     right: 90px;
-    z-index: 1;
+    z-index: 3000;
   }
   .outer-menu .checkbox-toggle {
     position: absolute;
