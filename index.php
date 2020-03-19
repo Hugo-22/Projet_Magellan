@@ -72,6 +72,8 @@ $img = new Menu();
 
                         <h3 class="fs-30 font-italic">Cuisinée par Sylviane</h3>
 
+
+
                 </div>
 
                 <div class="header_button">
@@ -79,6 +81,9 @@ $img = new Menu();
                     <a class="btn btn-danger fs-2" href="reservation.php">Réservation</a>
 
                 </div>
+
+
+
 
             </div>
 
@@ -324,8 +329,8 @@ $img = new Menu();
 
                     $filename = $row['name'];
                     echo '<div class="col-12 col-sm-4 pb-5">';
-                    echo '<a href="upload/' . $filename . '" class="site-thumbnail image-popup rounded">';
-                    echo '<img src="upload/' . $filename . '" alt="Free Template by colorlib.com" width="350px" height="350px" class="img-fluid rounded">';
+                    echo '<a href="upload/' . $filename . '" class="w-100 site-thumbnail image-popup rounded">';
+                    echo '<img src="upload/' . $filename . '" alt="Free Template by colorlib.com" width="350px" height="350px" class="w-100 img-fluid rounded">';
                     echo '</a>';
                     echo '</div>';
                 }
@@ -350,8 +355,8 @@ $img = new Menu();
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-12 col-sm-4 pb-5 d-flex justify-content-center ">
-                    <img src="images/chef.jpg" alt="photo-chef" class="shadow-lg img-fluid rounded">
+                <div class="d-none d-sm-flex col-12 col-sm-4 pb-5 justify-content-center ">
+                    <img src="images/chef.jpg" alt="photo-chef" class="shadow-lg img_presentation rounded">
                 </div>
                 <div class="col-12 col-sm-4 mb-5">
                     <form action="" method="post">
