@@ -48,7 +48,7 @@ $newImg = new Menu();
 
     <input class="" type="file" name="file">
     <br>
-    <input class="mt-3" type="submit" value="Replace" name="but_upload">
+    <input class="mt-3" type="submit" value="Remplacer" name="but_upload">
 
     </form>
 

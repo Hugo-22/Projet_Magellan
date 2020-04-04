@@ -144,7 +144,7 @@ $img = new Menu();
 
                         <?php
                       $debut = strftime("%Y-%m-%d", strtotime("now"));
-                      $fin = strftime("%Y-%m-%d", strtotime("+12 day"));
+                      $fin = strftime("%Y-%m-%d", strtotime("+120 day"));
 
 
                             $query_img = $img->DatePeriode($debut, $fin);
@@ -359,13 +359,9 @@ $img = new Menu();
                     <img src="images/chef.jpg" alt="photo-chef" class="shadow-lg img_presentation rounded">
                 </div>
                 <div class="col-12 col-sm-4 mb-5">
-                    <form action="" method="post">
-                        <div class="form-group">
-                            <input type="submit" class="btn btn-danger btn-lg" value="Contactez Moi">
-                        </div>
-                    </form>
-                    <p class="lead text-black">
-                        Adresse: <br> 2 Rte de Montaigu <br> 39000 Lons-le-Saunier <br> <br>
+                    
+                    <p class="lead text-black mt-5">
+                        Adresse: <br> <span class="text-danger">2 Rte de Montaigu <br> 39000 Lons-le-Saunier</span> <br> <br>
                         Téléphone: <br><a class="text-danger" href="tel:0681890037">
                             06-81-89-00-37</a><br>
                         Email: <br> <a class="text-danger" href="mailto:jecontacte@campus-numerique-lons.fr?subject=Demande de Renseignement Restaurant&body=Bonjour Sylviane,">jecontacte@campus-numerique-lons.fr</a>

@@ -19,7 +19,7 @@ foreach ($test as $key => $value) {
 } 
 echo($reservation);
 
-$mail_magellan = 'girard.paul39@gmail.com';
+$mail_magellan = 'secuhd@yahoo.fr';
 
 if($_POST) {
 

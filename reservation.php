@@ -64,6 +64,7 @@ input[type="text"]
     border: 1px solid #ced4da !important;
     border-radius: .25rem !important;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+    outline: unset; 
 }
 .caret{
   display: none !important;
@@ -148,7 +149,7 @@ $('.mdb-select').materialSelect();
 
 <?php
     $today = strftime("%Y-%m-%d", strtotime("now"));
-    $endDate = strftime("%Y-%m-%d", strtotime("+12 day"));
+    $endDate = strftime("%Y-%m-%d", strtotime("+130 day"));
 
   $resa = $ajoutMenu->DatePeriode($today, $endDate);
 
@@ -165,8 +166,6 @@ $('.mdb-select').materialSelect();
 
   }
 
-
-
   ?>
   </select>
   <input type="submit" name="submit" class="btn-save btn btn-blue-grey" value="Save">
@@ -174,8 +173,8 @@ $('.mdb-select').materialSelect();
                 <form class="d-flex flex-column justify-content-center align-items-center col-6" action="traitement_resa.php" method="POST">
                 <?php
 
-if(isset($_POST['azer'])){
-  ?>
+                if(isset($_POST['azer'])){
+                ?>
                 <table class="table">
                 <thead class="thead-info">
                     <tr>
@@ -202,7 +201,7 @@ if(isset($_POST['azer'])){
                 ?>
                  <h2 class="text-center font-weight-bold mb-4 pb-2">Renseignez vos coordonnées</h2>
 
-                <select name="formule" class="w-50 mb-4 form-control justselect">
+                <select name="formule" class="w-50 mb-4 form-control">
                 <option value="Choix de l'offre" disabled selected>Choix de l'offre</option>
                 <option value="Formule étudiant">Formule étudiant</option>
                 <option value="Formule standard">Formule standard</option>
